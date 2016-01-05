@@ -16,15 +16,43 @@
     <Filter Include="Header Files\void_base">
       <UniqueIdentifier>{bbfb511a-2fa5-467c-a122-f474a06c0258}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\void_base">
+      <UniqueIdentifier>{b1e74c49-2ae5-4830-b774-3e41fe8e1e1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_world">
+      <UniqueIdentifier>{f11e9550-ac5d-496d-9c27-8a5da2dd541d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\source\main.cc">
+    <ClCompile Include="..\..\source\void_base\game.cc">
+      <Filter>Source Files\void_base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\main.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\source\void_base\game.h">
+    <ClInclude Include="..\..\source\void_base\game.h">
       <Filter>Header Files\void_base</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\source\void_world\void_game.h">
+      <Filter>Header Files\void_world</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="void-engine.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\resources\image\ico\void.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
