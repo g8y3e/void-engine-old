@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Header Files\void_base">
       <UniqueIdentifier>{bbfb511a-2fa5-467c-a122-f474a06c0258}</UniqueIdentifier>
     </Filter>
@@ -22,6 +18,12 @@
     <Filter Include="Header Files\void_world">
       <UniqueIdentifier>{f11e9550-ac5d-496d-9c27-8a5da2dd541d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\void_base\log">
+      <UniqueIdentifier>{3ac1cd67-c5a7-4e4c-9208-85666ce9267d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\void_base\log">
+      <UniqueIdentifier>{7fe2b9c9-b273-4303-aaf5-e7fe65593aa0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\void_base\game.cc">
@@ -29,6 +31,9 @@
     </ClCompile>
     <ClCompile Include="..\..\source\main.cc">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\void_base\log\log.cc">
+      <Filter>Source Files\void_base\log</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -41,18 +46,14 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\source\void_base\log\log.h">
+      <Filter>Header Files\void_base\log</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="void-engine.rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
+    <ResourceCompile Include="void-engine.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="icon1.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="..\..\resources\image\ico\void.ico">
-      <Filter>Resource Files</Filter>
-    </Image>
+    <Image Include="..\..\resources\image\ico\void.ico" />
   </ItemGroup>
 </Project>

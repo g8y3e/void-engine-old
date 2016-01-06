@@ -80,9 +80,11 @@
   <ItemGroup>
     <ClCompile Include="..\..\source\main.cc" />
     <ClCompile Include="..\..\source\void_base\game.cc" />
+    <ClCompile Include="..\..\source\void_base\log\log.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\source\void_base\game.h" />
+    <ClInclude Include="..\..\source\void_base\log\log.h" />
     <ClInclude Include="..\..\source\void_world\void_game.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
@@ -91,7 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\resources\image\ico\void.ico" />
-    <Image Include="icon1.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

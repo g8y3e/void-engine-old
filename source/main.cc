@@ -3,6 +3,7 @@
 #include <third_party/sdl2/SDL.h>
 
 #include <void_world/void_game.h>
+#include <void_base/log/log.h>
 
 int main(int argc, char** argv) {
 	std::cout << "Begin game engine development\n";
@@ -39,6 +40,8 @@ int main(int argc, char** argv) {
 
 	// Clean up SDL2 and exit the program
 	SDL_Quit();
+
+	void_base::LOG("test log 42");
 
 	std::cin.get();
 	return game.run();
