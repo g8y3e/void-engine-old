@@ -1,4 +1,5 @@
-#pragma once
+#ifndef VOID_BASE_LOG_LOG_H_
+#define VOID_BASE_LOG_LOG_H_
 
 #include <string>
 
@@ -20,3 +21,5 @@ namespace void_base {
 #endif
 
 }
+
+#endif

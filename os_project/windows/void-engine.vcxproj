@@ -81,11 +81,19 @@
     <ClCompile Include="..\..\source\main.cc" />
     <ClCompile Include="..\..\source\void_base\game.cc" />
     <ClCompile Include="..\..\source\void_base\log\log.cc" />
+    <ClCompile Include="..\..\source\void_base\render\render.cc" />
+    <ClCompile Include="..\..\source\void_base\screen\screen_manager.cc" />
+    <ClCompile Include="..\..\source\void_world\void_game.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\source\void_base\game.h" />
     <ClInclude Include="..\..\source\void_base\log\log.h" />
+    <ClInclude Include="..\..\source\void_base\opengl.h" />
+    <ClInclude Include="..\..\source\void_base\render\render.h" />
+    <ClInclude Include="..\..\source\void_base\screen\screen.h" />
+    <ClInclude Include="..\..\source\void_base\screen\screen_mananager.h" />
     <ClInclude Include="..\..\source\void_world\void_game.h" />
+    <ClInclude Include="..\..\source\void_world\void_screen_manager.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

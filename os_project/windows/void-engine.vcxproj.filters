@@ -24,6 +24,27 @@
     <Filter Include="Source Files\void_base\log">
       <UniqueIdentifier>{7fe2b9c9-b273-4303-aaf5-e7fe65593aa0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\void_base\screen">
+      <UniqueIdentifier>{1488def8-ea3e-4cc7-892d-15f6a0492f53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_base\screen\scene">
+      <UniqueIdentifier>{06974238-4875-4064-a0f6-85c07485cb0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_base\screen\scene\2d">
+      <UniqueIdentifier>{32b8fa74-bc53-4f63-8db1-dda90e206b18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_base\screen\scene\3d">
+      <UniqueIdentifier>{f0f05a62-2037-4ff6-9b00-57e972ae8983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\void_base\screen">
+      <UniqueIdentifier>{2b6fd04e-48f2-4be6-a02f-738d186003ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\void_base\render">
+      <UniqueIdentifier>{4f737f1f-72da-4ca9-afb4-d21a67e1de30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\void_game">
+      <UniqueIdentifier>{b38fd9cd-ef66-4068-9df5-b89f5ea24ac1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\void_base\game.cc">
@@ -34,6 +55,15 @@
     </ClCompile>
     <ClCompile Include="..\..\source\void_base\log\log.cc">
       <Filter>Source Files\void_base\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\void_base\screen\screen_manager.cc">
+      <Filter>Source Files\void_base\screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\void_base\render\render.cc">
+      <Filter>Source Files\void_base\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\void_world\void_game.cc">
+      <Filter>Source Files\void_game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -48,6 +78,21 @@
     </ClInclude>
     <ClInclude Include="..\..\source\void_base\log\log.h">
       <Filter>Header Files\void_base\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_base\screen\screen.h">
+      <Filter>Header Files\void_base\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_base\screen\screen_mananager.h">
+      <Filter>Header Files\void_base\screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_world\void_screen_manager.h">
+      <Filter>Header Files\void_world</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_base\render\render.h">
+      <Filter>Header Files\void_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_base\opengl.h">
+      <Filter>Header Files\void_base</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
