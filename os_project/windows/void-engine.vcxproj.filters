@@ -45,6 +45,27 @@
     <Filter Include="Source Files\void_game">
       <UniqueIdentifier>{b38fd9cd-ef66-4068-9df5-b89f5ea24ac1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\void_base\debug">
+      <UniqueIdentifier>{47a540a3-4b98-45b9-9e7a-2dd508b796b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_base\debug\fps">
+      <UniqueIdentifier>{ac41342a-52b0-49ea-8bf1-3fa788e43c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_base\define">
+      <UniqueIdentifier>{68a0dc26-f10f-4f46-95ef-826c90b287f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\void_base\debug">
+      <UniqueIdentifier>{88f8b212-6815-4fd0-8d27-0cfe8fd8a1d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\void_base\debug\fps">
+      <UniqueIdentifier>{5d9f541e-5750-4c8a-a231-bfce09434c73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_base\helper">
+      <UniqueIdentifier>{acf480c0-879a-4dc0-a200-8ba8b45d78eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\void_base\helper">
+      <UniqueIdentifier>{46a1ed61-16e6-466b-b2d8-c12e88201c3f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\void_base\game.cc">
@@ -64,6 +85,12 @@
     </ClCompile>
     <ClCompile Include="..\..\source\void_world\void_game.cc">
       <Filter>Source Files\void_game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\void_base\debug\fps\fps_counter.cc">
+      <Filter>Source Files\void_base\debug\fps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\void_base\helper\system_helper.cc">
+      <Filter>Source Files\void_base\helper</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -93,6 +120,15 @@
     </ClInclude>
     <ClInclude Include="..\..\source\void_base\opengl.h">
       <Filter>Header Files\void_base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_base\debug\fps\fps_counter.h">
+      <Filter>Header Files\void_base\debug\fps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_base\define\system_define.h">
+      <Filter>Header Files\void_base\define</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_base\helper\system_helper.h">
+      <Filter>Header Files\void_base\helper</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

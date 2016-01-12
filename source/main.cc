@@ -10,9 +10,6 @@ int main(int argc, char** argv) {
 
 	void_world::VoidGame game;
 	game.init("Void World v0.0.0.1", 300, 480);
-
-	void_base::LOG("test log 42");
-
-	std::cin.get();
+	
 	return game.run();
 }

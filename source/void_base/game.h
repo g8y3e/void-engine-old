@@ -7,6 +7,8 @@
 #include <void_base/render/render.h>
 #include <void_base/screen/screen_mananager.h>
 
+#include <void_base/debug/fps/fps_counter.h>
+
 namespace void_base {
 	class Game {
 	public:
@@ -25,6 +27,7 @@ namespace void_base {
 	protected:
 		std::unique_ptr<Render> render_;
 		std::unique_ptr<ScreenManager> screen_manager_;
+		std::unique_ptr<debug::FPSCounter> fps_counter_;
 
 	private:
 		bool is_running_;
