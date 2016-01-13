@@ -16,6 +16,9 @@ namespace debug {
 
 		count_ = 0;
 		static_count_ = 0;
+
+		previous_count_ = 0;
+		previous_static_count_ = 0;
 	}
 
 	void FPSCounter::count() {
@@ -34,6 +37,14 @@ namespace debug {
 		return static_count_;
 	}
 
+	int FPSCounter::getPreviousCount() {
+		return previous_count_;
+	}
+
+	int FPSCounter::getPreviousCountStatic() {
+		return previous_static_count_;
+	}
+
 	bool FPSCounter::printData() {
 		if ((previous_time_ + VE_SECOND_MS) <= helper::getCurrentTime()) {
 
@@ -41,6 +52,9 @@ namespace debug {
 			sprintf(current_fps, "FPS: %d;\nStatic FPS: %d;", count_, static_count_);
 
 			SDL_Log(current_fps);
+
+			previous_count_ = count_;
+			previous_static_count_ = static_count_;
 
 			count_ = 0;
 			static_count_ = 0;

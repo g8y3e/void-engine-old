@@ -14,7 +14,10 @@ namespace void_base {
 		void setCurrentScreen(Screen* screen);
 		Screen* getCurrentScreen() const;
 
-	private:
+	public:
+		virtual bool init() = 0;
+
+	protected:
 		Game* game_;
 		Screen* screen_;
 	};

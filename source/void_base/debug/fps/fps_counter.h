@@ -19,11 +19,17 @@ namespace debug {
 		int getCount();
 		int getCountStatic();
 
+		int getPreviousCount();
+		int getPreviousCountStatic();
+		
 	public:
 		bool printData();
 
 	private:
 		ulong previous_time_;
+
+		int previous_count_;
+		int previous_static_count_;
 
 		int count_;
 		int static_count_;

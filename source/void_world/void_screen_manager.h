@@ -8,6 +8,9 @@ namespace void_world {
 	public:
 		VoidScreenManager(void_base::Game* game);
 		virtual ~VoidScreenManager();
+
+	public:
+		virtual bool init() override;
 	};
 }
 

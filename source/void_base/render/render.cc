@@ -2,6 +2,8 @@
 
 #include <void_base/log/log.h>
 
+#include <void_base/screen/screen.h>
+
 namespace void_base {
 	Render::~Render() {
 		SDL_DestroyWindow(window_);
@@ -100,7 +102,10 @@ namespace void_base {
 	}
 
 	bool Render::render(Screen* screen) {
-		return true;
+		bool result = screen->draw();
+
+		SDL_GL_SwapWindow(window_);
+		return result;
 	}
 
 	int Render::getScreenWidth() const {
