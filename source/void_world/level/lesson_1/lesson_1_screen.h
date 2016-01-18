@@ -4,12 +4,13 @@
 #include <void_base/screen/screen.h>
 
 namespace void_world {
-	class Lesson1Screen : void_base::Screen {
+	class Lesson1Screen : public void_base::Screen {
 	public:
 		Lesson1Screen(void_base::Game * game);
 		virtual ~Lesson1Screen();
 
 	public:
+		bool draw() override;
 	};
 }
 

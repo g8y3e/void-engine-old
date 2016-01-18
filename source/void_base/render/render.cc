@@ -2,6 +2,7 @@
 
 #include <void_base/log/log.h>
 
+#include <void_base/opengl.h>
 #include <void_base/screen/screen.h>
 
 namespace void_base {
@@ -32,13 +33,8 @@ namespace void_base {
 		SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 0);
 		SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 0);
 		SDL_GL_SetAttribute(SDL_GL_RETAINED_BACKING, 1);
-#ifdef GL_VERSION_3
 		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
-#else
-		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 1);
-		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
-#endif
+		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
 		SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
 
 #ifdef MOBILE_OS
@@ -46,9 +42,10 @@ namespace void_base {
 
 		window_ = SDL_CreateWindow(name, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
 			0, 0, SDL_WINDOW_OPENGL);
-#else      
+#else  
 		window_ = SDL_CreateWindow(name.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
 								   width, height, SDL_WINDOW_OPENGL);
+		
 #endif 
 
 		if (window_ == nullptr) {
@@ -97,6 +94,15 @@ namespace void_base {
 
 		SDL_GL_MakeCurrent(window_, context_);
 		SDL_GetWindowSize(window_, &screen_width_, &screen_height_);
+
+#ifndef MOBILE_OS
+		GLenum res = glewInit();
+		if (res != GLEW_OK) {
+			//std::string error_msg = std::to_string((char*)(glewGetErrorString(res)));
+			return false;
+		}
+#endif
+
 
 		return true;
 	}

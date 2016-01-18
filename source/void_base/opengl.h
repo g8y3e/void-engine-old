@@ -3,7 +3,7 @@
 
 #ifdef MOBILE_OS
 #else
-#include <third_party/sdl2/SDL_opengl.h>
+#include <third_party/gl/glew.h>
+#include <GL/gl.h>
 #endif
-
 #endif

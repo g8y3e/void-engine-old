@@ -53,11 +53,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;WINMM.LIB;Version.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;WINMM.LIB;Version.lib;imm32.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
@@ -75,28 +75,36 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;WINMM.LIB;Version.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;WINMM.LIB;Version.lib;imm32.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\main.cc" />
     <ClCompile Include="..\..\source\void_base\debug\fps\fps_counter.cc" />
+    <ClCompile Include="..\..\source\void_base\event\event_manager.cc" />
     <ClCompile Include="..\..\source\void_base\game.cc" />
     <ClCompile Include="..\..\source\void_base\helper\system_helper.cc" />
     <ClCompile Include="..\..\source\void_base\log\log.cc" />
+    <ClCompile Include="..\..\source\void_base\math\math_3d.cc" />
     <ClCompile Include="..\..\source\void_base\render\render.cc" />
     <ClCompile Include="..\..\source\void_base\screen\screen.cc" />
     <ClCompile Include="..\..\source\void_base\screen\screen_manager.cc" />
+    <ClCompile Include="..\..\source\void_world\level\lesson_1\lesson_1_screen.cc" />
     <ClCompile Include="..\..\source\void_world\void_game.cc" />
     <ClCompile Include="..\..\source\void_world\void_screen_manager.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\source\third_party\gl\glew.h" />
+    <ClInclude Include="..\..\source\third_party\gl\glxew.h" />
+    <ClInclude Include="..\..\source\third_party\gl\wglew.h" />
     <ClInclude Include="..\..\source\void_base\debug\fps\fps_counter.h" />
     <ClInclude Include="..\..\source\void_base\define\system_define.h" />
+    <ClInclude Include="..\..\source\void_base\event\event_manager.h" />
     <ClInclude Include="..\..\source\void_base\game.h" />
     <ClInclude Include="..\..\source\void_base\helper\system_helper.h" />
     <ClInclude Include="..\..\source\void_base\log\log.h" />
+    <ClInclude Include="..\..\source\void_base\math\math_3d.h" />
     <ClInclude Include="..\..\source\void_base\opengl.h" />
     <ClInclude Include="..\..\source\void_base\render\render.h" />
     <ClInclude Include="..\..\source\void_base\screen\screen.h" />

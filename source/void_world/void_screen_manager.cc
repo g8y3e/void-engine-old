@@ -12,5 +12,7 @@ namespace void_world {
 	
 	bool VoidScreenManager::init() {
 		screen_ = new Lesson1Screen(game_);
+
+		return true;
 	}	
 }

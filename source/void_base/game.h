@@ -6,6 +6,7 @@
 
 #include <void_base/render/render.h>
 #include <void_base/screen/screen_mananager.h>
+#include <void_base/event/event_manager.h>
 
 #include <void_base/debug/fps/fps_counter.h>
 
@@ -21,13 +22,17 @@ namespace void_base {
 	public:
 		virtual int run();
 
+	public:
+		void setRunning(bool is_running);
+
 	private:
-		bool isRunning() const;
+		bool isRunning() const;		
 
 	protected:
 		std::unique_ptr<Render> render_;
 		std::unique_ptr<ScreenManager> screen_manager_;
 		std::unique_ptr<debug::FPSCounter> fps_counter_;
+		std::unique_ptr<EventManager> event_manager_;
 
 	private:
 		bool is_running_;

@@ -34,6 +34,7 @@ namespace void_base {
 		screen_manager_->init();
 
 		while(isRunning()) {
+			event_manager_->handleEvent(screen_manager_->getCurrentScreen());
 			fps_counter_->count();
 
 			current_time = helper::getCurrentTime();
@@ -56,5 +57,9 @@ namespace void_base {
 
 	bool Game::isRunning() const {
 		return is_running_;
+	}
+
+	void Game::setRunning(bool is_running) {
+		is_running_ = is_running;
 	}
 }

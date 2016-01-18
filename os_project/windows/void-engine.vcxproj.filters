@@ -78,6 +78,27 @@
     <Filter Include="Source Files\void_game\level\lesson_1">
       <UniqueIdentifier>{0de17d3a-3421-49e0-a253-af3699bca535}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\void_world\level\lesson_1">
+      <UniqueIdentifier>{41afe6c5-a3b4-49b6-8d72-d52a7bb08749}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_base\event">
+      <UniqueIdentifier>{0c5e5ced-5056-4a63-9c0e-c315316611e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\void_base\event">
+      <UniqueIdentifier>{59a16584-65ac-47a9-a743-936174c74ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_base\math">
+      <UniqueIdentifier>{eb93bfab-f3ba-4250-923f-85c63a08a9b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\void_base\math">
+      <UniqueIdentifier>{6b6051b0-1e12-4414-86ae-7d77847cbdbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\third_party">
+      <UniqueIdentifier>{83c1aad3-337a-4df8-bb11-908cc3ecc5a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\third_party\gl">
+      <UniqueIdentifier>{ed34a3f8-c226-42bb-8918-238d22f98063}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\void_base\game.cc">
@@ -109,6 +130,15 @@
     </ClCompile>
     <ClCompile Include="..\..\source\void_world\void_screen_manager.cc">
       <Filter>Source Files\void_game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\void_world\level\lesson_1\lesson_1_screen.cc">
+      <Filter>Source Files\void_game\level\lesson_1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\void_base\event\event_manager.cc">
+      <Filter>Source Files\void_base\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\void_base\math\math_3d.cc">
+      <Filter>Source Files\void_base\math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -149,7 +179,22 @@
       <Filter>Header Files\void_base\render</Filter>
     </ClInclude>
     <ClInclude Include="..\..\source\void_world\level\lesson_1\lesson_1_screen.h">
-      <Filter>Header Files\void_world\level</Filter>
+      <Filter>Header Files\void_world\level\lesson_1</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_base\event\event_manager.h">
+      <Filter>Header Files\void_base\event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_base\math\math_3d.h">
+      <Filter>Header Files\void_base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\third_party\gl\glew.h">
+      <Filter>Header Files\third_party\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\third_party\gl\glxew.h">
+      <Filter>Header Files\third_party\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\third_party\gl\wglew.h">
+      <Filter>Header Files\third_party\gl</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

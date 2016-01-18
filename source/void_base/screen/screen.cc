@@ -11,14 +11,12 @@ namespace void_base{
 	}
 
 	bool Screen::draw() {
-		clearDraw();
-
 		return true;
 	}
 
 	void Screen::clearDraw() {
-		glClearColor(0.0f, 0.3f, 0.0f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
 	}
 
 }
