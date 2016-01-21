@@ -196,6 +196,9 @@
     <ClInclude Include="..\..\source\third_party\gl\wglew.h">
       <Filter>Header Files\third_party\gl</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\source\third_party\gl\glext.h">
+      <Filter>Header Files\third_party\gl</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="void-engine.rc" />

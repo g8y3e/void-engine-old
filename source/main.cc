@@ -9,7 +9,7 @@ int main(int argc, char** argv) {
 	void_base::LOG("Begin game engine development\n");
 
 	void_world::VoidGame game;
-	game.init("Void World v0.0.0.1", 800, 600, 60);
+	game.init("Void World v0.0.0.1", 1280, 768, 60);
 	
 	return game.run();
 }

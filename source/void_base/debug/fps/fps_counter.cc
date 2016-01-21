@@ -58,7 +58,7 @@ namespace debug {
 
 			count_ = 0;
 			static_count_ = 0;
-			previous_time_ += VE_SECOND_MS;
+			previous_time_ = helper::getCurrentTime();
 
 			return true;
 		}

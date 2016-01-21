@@ -34,7 +34,8 @@ namespace void_base {
 		SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 0);
 		SDL_GL_SetAttribute(SDL_GL_RETAINED_BACKING, 1);
 		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
-		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
+		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
+		SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
 		SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
 
 #ifdef MOBILE_OS
@@ -96,13 +97,15 @@ namespace void_base {
 		SDL_GetWindowSize(window_, &screen_width_, &screen_height_);
 
 #ifndef MOBILE_OS
+		glewExperimental = GL_TRUE;
 		GLenum res = glewInit();
 		if (res != GLEW_OK) {
+			printf("Error initializing GLEW! %s\n", glewGetErrorString(res));
+
 			//std::string error_msg = std::to_string((char*)(glewGetErrorString(res)));
 			return false;
 		}
 #endif
-
 
 		return true;
 	}

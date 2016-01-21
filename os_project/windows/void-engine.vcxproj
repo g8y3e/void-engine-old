@@ -57,7 +57,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;WINMM.LIB;Version.lib;imm32.lib;opengl32.lib;glew32s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;WINMM.LIB;Version.lib;imm32.lib;opengl32.lib;glew32sd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\source\third_party\gl\glew.h" />
+    <ClInclude Include="..\..\source\third_party\gl\glext.h" />
     <ClInclude Include="..\..\source\third_party\gl\glxew.h" />
     <ClInclude Include="..\..\source\third_party\gl\wglew.h" />
     <ClInclude Include="..\..\source\void_base\debug\fps\fps_counter.h" />
