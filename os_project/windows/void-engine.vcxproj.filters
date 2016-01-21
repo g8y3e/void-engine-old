@@ -99,6 +99,12 @@
     <Filter Include="Header Files\third_party\gl">
       <UniqueIdentifier>{ed34a3f8-c226-42bb-8918-238d22f98063}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\void_game\level\lesson_2">
+      <UniqueIdentifier>{a4928634-d914-44a4-92ac-ed5c1cac6059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\void_world\level\lesson_2">
+      <UniqueIdentifier>{5f124555-7a0c-4431-926a-daed48b0d57b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\source\void_base\game.cc">
@@ -137,8 +143,11 @@
     <ClCompile Include="..\..\source\void_base\event\event_manager.cc">
       <Filter>Source Files\void_base\event</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\source\void_base\math\math_3d.cc">
+    <ClCompile Include="..\..\source\void_base\math\vector.cc">
       <Filter>Source Files\void_base\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\source\void_world\level\lesson_2\lesson_2_screen.cc">
+      <Filter>Source Files\void_game\level\lesson_2</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -184,9 +193,6 @@
     <ClInclude Include="..\..\source\void_base\event\event_manager.h">
       <Filter>Header Files\void_base\event</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\source\void_base\math\math_3d.h">
-      <Filter>Header Files\void_base\math</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\source\third_party\gl\glew.h">
       <Filter>Header Files\third_party\gl</Filter>
     </ClInclude>
@@ -198,6 +204,12 @@
     </ClInclude>
     <ClInclude Include="..\..\source\third_party\gl\glext.h">
       <Filter>Header Files\third_party\gl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_base\math\vector.h">
+      <Filter>Header Files\void_base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\source\void_world\level\lesson_2\lesson_2_screen.h">
+      <Filter>Header Files\void_world\level\lesson_2</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

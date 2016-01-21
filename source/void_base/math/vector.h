@@ -1,5 +1,5 @@
-#ifndef VOID_BASE_MATH_MATH_3D_H_
-#define VOID_BASE_MATH_MATH_3D_H_
+#ifndef VOID_BASE_MATH_VECTOR_H_
+#define VOID_BASE_MATH_VECTOR_H_
 
 namespace void_base {
 namespace math {

@@ -1,6 +1,7 @@
 #include "fps_counter.h"
 
 #include <stdio.h>
+
 #include <third_party/SDL2/SDL.h>
 
 #include <void_base/helper/system_helper.h>

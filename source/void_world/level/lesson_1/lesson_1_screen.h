@@ -1,6 +1,8 @@
 #ifndef VOID_WORLD_LEVEL_LESSON_1_LESSON_1_SCREEN_H_
 #define VOID_WORLD_LEVEL_LESSON_1_LESSON_1_SCREEN_H_
 
+#include <void_base/opengl.h>
+
 #include <void_base/screen/screen.h>
 
 namespace void_world {
@@ -11,6 +13,9 @@ namespace void_world {
 
 	public:
 		bool draw() override;
+
+	private:
+		GLuint VBO;
 	};
 }
 

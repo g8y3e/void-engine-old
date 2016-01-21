@@ -1,5 +1,8 @@
 #include "render.h"
 
+#include <sstream>
+#include <cstdarg>
+
 #include <void_base/log/log.h>
 
 #include <void_base/opengl.h>
@@ -100,9 +103,10 @@ namespace void_base {
 		glewExperimental = GL_TRUE;
 		GLenum res = glewInit();
 		if (res != GLEW_OK) {
-			printf("Error initializing GLEW! %s\n", glewGetErrorString(res));
+			std::ostringstream error_stream;
+			error_stream << "Error initializing GLEW: \"" << glewGetErrorString(res) << "\"!";
+			LOG(error_stream.str());
 
-			//std::string error_msg = std::to_string((char*)(glewGetErrorString(res)));
 			return false;
 		}
 #endif
@@ -111,7 +115,7 @@ namespace void_base {
 	}
 
 	bool Render::render(Screen* screen) {
-		bool result = screen->draw();
+		bool result = screen->draw();	
 
 		SDL_GL_SwapWindow(window_);
 		return result;

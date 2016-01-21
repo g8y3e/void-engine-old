@@ -2,12 +2,9 @@
 
 #include <void_base/log/log.h>
 #include <void_base/opengl.h>
-#include <void_base/math/math_3d.h>
+#include <void_base/math/vector.h>
 
-GLuint VBO;
-
-namespace void_world {	
-
+namespace void_world {		
 	Lesson1Screen::Lesson1Screen(void_base::Game* game) 
 		: void_base::Screen(game) {
 

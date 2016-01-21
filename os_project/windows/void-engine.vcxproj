@@ -86,11 +86,12 @@
     <ClCompile Include="..\..\source\void_base\game.cc" />
     <ClCompile Include="..\..\source\void_base\helper\system_helper.cc" />
     <ClCompile Include="..\..\source\void_base\log\log.cc" />
-    <ClCompile Include="..\..\source\void_base\math\math_3d.cc" />
+    <ClCompile Include="..\..\source\void_base\math\vector.cc" />
     <ClCompile Include="..\..\source\void_base\render\render.cc" />
     <ClCompile Include="..\..\source\void_base\screen\screen.cc" />
     <ClCompile Include="..\..\source\void_base\screen\screen_manager.cc" />
     <ClCompile Include="..\..\source\void_world\level\lesson_1\lesson_1_screen.cc" />
+    <ClCompile Include="..\..\source\void_world\level\lesson_2\lesson_2_screen.cc" />
     <ClCompile Include="..\..\source\void_world\void_game.cc" />
     <ClCompile Include="..\..\source\void_world\void_screen_manager.cc" />
   </ItemGroup>
@@ -105,12 +106,13 @@
     <ClInclude Include="..\..\source\void_base\game.h" />
     <ClInclude Include="..\..\source\void_base\helper\system_helper.h" />
     <ClInclude Include="..\..\source\void_base\log\log.h" />
-    <ClInclude Include="..\..\source\void_base\math\math_3d.h" />
+    <ClInclude Include="..\..\source\void_base\math\vector.h" />
     <ClInclude Include="..\..\source\void_base\opengl.h" />
     <ClInclude Include="..\..\source\void_base\render\render.h" />
     <ClInclude Include="..\..\source\void_base\screen\screen.h" />
     <ClInclude Include="..\..\source\void_base\screen\screen_mananager.h" />
     <ClInclude Include="..\..\source\void_world\level\lesson_1\lesson_1_screen.h" />
+    <ClInclude Include="..\..\source\void_world\level\lesson_2\lesson_2_screen.h" />
     <ClInclude Include="..\..\source\void_world\void_game.h" />
     <ClInclude Include="..\..\source\void_world\void_screen_manager.h" />
     <ClInclude Include="resource.h" />
